@@ -31,7 +31,6 @@ function Dashboard() {
         setInvoiceItems(updated_item);
       } else {
         setInvoiceItems([...invoiceItems, { ...item_to_add, quantity: 1 }]);
-        console.log(invoiceItems, "Invoice after add first time");
       }
     } else {
       const item_to_add = items.find((i) => i.id === id);
@@ -47,7 +46,6 @@ function Dashboard() {
       }
     }
   };
-  console.log(invoiceItems, "Invoices");
   return (
     <>
       <div className="container">

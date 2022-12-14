@@ -2,7 +2,6 @@ import React from 'react'
 import ListItem from "../../components/Items/ListItem";
 
 export default function Items(props) {
-  // console.log(props.items, "inside")
   return (
     <div>
       <div className="row py-4 border-bottom align-items-center px-0 mx-0">

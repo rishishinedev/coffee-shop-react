@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Button from "../Button";
 
 const ModalWrapper = (props) => {
-  const { isOpenModal, handleShowModal } = props;
+  const { isOpenModal, handleShowModal, totalPrice } = props;
 
   return (
     <>
@@ -18,7 +18,7 @@ const ModalWrapper = (props) => {
           <Modal.Title>Modal title</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          Make sure customer paid his bill.
+          Make sure customer paid his bill of ${totalPrice}.
         </Modal.Body>
         <Modal.Footer>
           <Button className={'btn btn-primary dropdown'} onClick={handleShowModal}>Close</Button>
